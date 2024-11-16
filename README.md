@@ -69,7 +69,7 @@ Simply open `index.html` in your browser.
 
 ## ✨ **Live Demo**  
 
-Check out my portfolio live: [Your Live Website Link](https://umerqureshi409.github.io/Portfolio)  
+Check out my portfolio live: [My Live Website Link](https://umerqureshi409.github.io/Portfolio)  
 
 ---
 
