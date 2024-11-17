@@ -1,3 +1,34 @@
+
+(function () {
+    emailjs.init("HFV8fhkX4FvDXMD9A"); // Replace with your EmailJS user ID
+  })();
+
+  document.getElementById("contact-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+    
+      // Collect form data
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const subject = document.getElementById("subject").value;
+      const message = document.getElementById("message").value;
+    
+      // Send email using EmailJS
+      emailjs.send("service_cqto5gc", "template_1sap6py", {
+        from_name: name,
+        from_email: email,
+        subject: subject,
+        message: message,
+      }).then(
+        function (response) {
+          
+          window.location.href = "thankyou.html";
+        },
+        function (error) {
+          alert("Failed to send message. Please try again.");
+        }
+      );
+    });
+    
 $(document).ready(function () {
 
     $('#menu').click(function () {
@@ -37,24 +68,26 @@ $(document).ready(function () {
         }, 500, 'linear')
     });
 
-    // <!-- emailjs to mail contact form data -->
-    $("#contact-form").submit(function (event) {
-        emailjs.init("user_TTDmetQLYgWCLzHTDgqxm");
+    // // <!-- emailjs to mail contact form data -->
+    // $("#contact-form").submit(function (event) {
+    //     emailjs.init("user_TTDmetQLYgWCLzHTDgqxm");
 
-        emailjs.sendForm('contact_service', 'template_contact', '#contact-form')
-            .then(function (response) {
-                console.log('SUCCESS!', response.status, response.text);
-                document.getElementById("contact-form").reset();
-                alert("Form Submitted Successfully");
-            }, function (error) {
-                console.log('FAILED...', error);
-                alert("Form Submission Failed! Try Again");
-            });
-        event.preventDefault();
-    });
+    //     emailjs.sendForm('contact_service', 'template_contact', '#contact-form')
+    //         .then(function (response) {
+    //             console.log('SUCCESS!', response.status, response.text);
+    //             document.getElementById("contact-form").reset();
+    //             alert("Form Submitted Successfully");
+    //         }, function (error) {
+    //             console.log('FAILED...', error);
+    //             alert("Form Submission Failed! Try Again");
+    //         });
+    //     event.preventDefault();
+    // });
     // <!-- emailjs to mail contact form data -->
+    
 
 });
+
 
 document.addEventListener('visibilitychange',
     function () {

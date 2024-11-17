@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thank You</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+  />
+  <style>
+    /* Global Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: #0d1117;
+      color: #c9d1d9;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .thank-you-container {
+      text-align: center;
+      background: #161b22;
+      padding: 50px 30px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.7);
+      max-width: 600px;
+      width: 100%;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .thank-you-container:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.8);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #0ef;
+      margin-bottom: 20px;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .thank-you-message {
+      font-size: 1.2rem;
+      color: #c9d1d9;
+      margin-bottom: 30px;
+      animation: fadeIn 1s ease-in-out 0.5s;
+    }
+
+    .thank-you-icon {
+      font-size: 5rem;
+      color: #0ef;
+      margin-bottom: 20px;
+      animation: bounce 1s ease-in-out infinite;
+    }
+
+    .back-button {
+      padding: 12px 20px;
+      background: #0ef;
+      color: #161b22;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      animation: fadeIn 1s ease-in-out 1s;
+    }
+
+    .back-button:hover {
+      background: #161b22;
+      color: #0ef;
+      border: 1px solid #0ef;
+      box-shadow: 0 0 10px #0ef;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-15px);
+      }
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .thank-you-container {
+        width: 80%;
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="thank-you-container">
+    <div class="thank-you-icon">
+      <i class="fa-solid fa-check-circle"></i>
+    </div>
+    <h1>Thank You!</h1>
+    <p class="thank-you-message">
+      Your message has been successfully sent. We'll get back to you shortly.
+    </p>
+    <a href="index.html">
+      <button class="back-button">Go Back to Home</button>
+    </a>
+  </div>
+
+</body>
+</html>
