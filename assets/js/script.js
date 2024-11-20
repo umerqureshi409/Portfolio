@@ -222,6 +222,26 @@ document.onkeydown = function (e) {
         return false;
     }
 }
+// Animate expertise bars when visible
+document.addEventListener("DOMContentLoaded", () => {
+    const expertiseItems = document.querySelectorAll(".expertise-item");
+  
+    const handleScroll = () => {
+      expertiseItems.forEach((item) => {
+        const skillValue = item.getAttribute("data-skill");
+        const expertiseFill = item.querySelector(".expertise-fill");
+        const rect = item.getBoundingClientRect();
+  
+        // Trigger animation when the expertise-item is in the viewport
+        if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+          expertiseFill.style.width = `${skillValue}%`;
+        }
+      });
+    };
+  
+    window.addEventListener("scroll", handleScroll);
+    handleScroll(); // Trigger on load
+  });
 
 // // Start of Tawk.to Live Chat
 // var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
