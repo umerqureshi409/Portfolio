@@ -29,7 +29,7 @@
             <li><a href="#education">Education</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#work">Work</a></li>
-            <li><a href="#form">Contact</a></li>
+            <li><a href="#contact-me">Contact</a></li>
             </ul>
         </nav>
 </header>
@@ -70,7 +70,7 @@
     <div class="row">
 
     <div class="image">
-        <img draggable="false" class="tilt" src="./assets/images/umer.png" alt="">
+        <img draggable="false" class="tilt" src="./assets/images/umer.jpg" alt="">
     </div>
     <div class="content">
         <h3>I'm Umer Qureshi</h3>
@@ -761,67 +761,73 @@
 <!-- work project section ends -->
 
 <!-- experience section ends -->
-<div class="form" id="form">
-  <!-- Contact Info -->
-  <div class="contact-info">
-    <h2>Contact Info</h2>
-    <ul>
-      <li>
-        <i class="fa-solid fa-location-dot"></i>
-        <div>
-          <strong>Location:</strong>
-          <p>Site Area Kotri, Jamshoro, Sindh, Pakistan</p>
-        </div>
-      </li>
-      <li>
-        <i class="fa-solid fa-envelope"></i>
-        <div>
-          <strong>Email:</strong>
-          <p>aa1660025@gmail.com</p>
-        </div>
-      </li>
-      <li>
-        <i class="fa-solid fa-phone"></i>
-        <div>
-          <strong>Call:</strong>
-          <p>+92-321-3021-673</p>
-        </div>
-      </li>
-    </ul>
-    <div class="map">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3605.351272232867!2d68.27332967116382!3d25.35954112743276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1731851643904!5m2!1sen!2s"
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
+<section class="contact-section" id="contact-me">
+  <h2 class="heading">
+    <i class="fas fa-envelope"></i> Contact <span>Me</span>
+  </h2>
+  
+  <div class="form" id="form">
+    <!-- Contact Info -->
+    <div class="contact-info">
+      <h2>Contact Info</h2>
+      <ul>
+        <li>
+          <i class="fa-solid fa-location-dot"></i>
+          <div>
+            <strong>Location:</strong>
+            <p>Site Area Kotri, Jamshoro, Sindh, Pakistan</p>
+          </div>
+        </li>
+        <li>
+          <i class="fa-solid fa-envelope"></i>
+          <div>
+            <strong>Email:</strong>
+            <p>aa1660025@gmail.com</p>
+          </div>
+        </li>
+        <li>
+          <i class="fa-solid fa-phone"></i>
+          <div>
+            <strong>Call:</strong>
+            <p>+92-321-3021-673</p>
+          </div>
+        </li>
+      </ul>
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3605.351272232867!2d68.27332967116382!3d25.35954112743276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1731851643904!5m2!1sen!2s"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="contact-form">
+      <h2>Contact Me</h2>
+      <form action="#" id="contact-form">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required />
+
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" placeholder="Enter the subject" required />
+
+        <label for="message">Message</label>
+        <textarea
+          id="message"
+          rows="5"
+          placeholder="Enter your message"
+          required
+        ></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
     </div>
   </div>
-
-  <!-- Contact Form -->
-  <div class="contact-form" >
-    <h2>Contact Me</h2>
-    <form action="#" id="contact-form">
-      <label for="name">Name</label>
-      <input type="text" id="name" placeholder="Enter your name" required />
-
-      <label for="email">Email</label>
-      <input type="email" id="email" placeholder="Enter your email" required />
-
-      <label for="subject">Subject</label>
-      <input type="text" id="subject" placeholder="Enter the subject" required />
-
-      <label for="message">Message</label>
-      <textarea
-        id="message"
-        rows="5"
-        placeholder="Enter your message"
-        required
-      ></textarea>
-
-      <button type="submit">Send Message</button>
-    </form>
-  </div>
-</div>
+</section>
 
 <!-- footer section starts -->
 <section class="footer">
