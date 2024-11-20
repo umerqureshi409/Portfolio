@@ -1316,11 +1316,11 @@ body {
 .expertise {
   min-height: 90vh;
   /* Updated background for consistency */
-  background: rgba(0, 0, 22, 0.4);
+  background: #fff;
 }
 
 .expertise h2 {
-  color: #fff;
+  color: #0d1117;
 }
 
 .expertise .heading span {
