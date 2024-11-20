@@ -590,6 +590,9 @@ header .navbar ul li a:hover {
   background: #161b22;
   min-height: 80vh;
 }
+.education span{
+  color:#fff;
+}
 .education .qoute {
   font-size: 1.5rem;
   text-align: center;
@@ -1150,6 +1153,27 @@ body {
   padding: 0;
 }
 
+.contact-section {
+  background-color: white;
+  padding: 2rem 0;
+  border-radius: 1rem;
+}
+
+.contact-section .heading {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.contact-section .heading i {
+  color: #0ef;
+  margin-right: 0.5rem;
+}
+
+.contact-section .heading span {
+  color: #0ef;
+}
+
+
 /* Container */
 .form {
    
@@ -1324,7 +1348,7 @@ body {
 }
 
 .expertise .heading span {
-  color: #0ef;
+  color: red;
 }
 
 .expertise .container {
