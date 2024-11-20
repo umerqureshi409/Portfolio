@@ -587,7 +587,7 @@ header .navbar ul li a:hover {
 
 /* education section starts */
 .education {
-  background: #e5ecfb;
+  background: #161b22;
   min-height: 80vh;
 }
 .education .qoute {
@@ -609,7 +609,7 @@ header .navbar ul li a:hover {
   flex-direction: row;
   width: 80%;
   border-radius: 0.5rem;
-  box-shadow: 0.2rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px #0ef;
   text-align: center;
   position: relative;
   margin-top: 2rem;
@@ -619,7 +619,7 @@ header .navbar ul li a:hover {
 }
 .education .box-container .box:hover {
   transform: scale(1.03);
-  box-shadow: 1rem 0.5rem 1.2rem rgba(0, 0, 0, 0.3);
+  box-shadow: 1rem 0.5rem 1.2rem rgba(255,254, 254, 0.3);
 }
 .education .box-container .box .image {
   flex: 1 1 20rem;
